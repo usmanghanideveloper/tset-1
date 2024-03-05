@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+</head>
+<style> nav{
+    text-align: center;
+}
+
+ul{list-style-type: none;
+    display: inline-block;
+
+}
+ul li{
+    float: left;
+    text-align: center;
+    margin: 1px;
+    background-color: rgb(142, 104, 240);
+    height: 50px;
+    width: 100px;
+    transition:  .2s linear;
+    line-height: 50px;
+    font-family: Arial;
+    color: black;
+   
+}
+nav{
+    text-align: center;
+}
+
+ul li:hover{
+    background-color: rgb(60, 249, 186);
+    transition: 2s linear;
+}
+ul li a 
+{
+    text-decoration: none;
+    color: rgb(64, 94, 212);
+    display: block;
+}
+ul li ul
+{
+    margin-left: -40px;
+    display: none;
+}
+ul li :hover ul
+{
+    display: block;
+}
+ul li ul li
+{
+    margin: 0%;
+}
+ul li ul li ul
+{
+    margin-left: 110px;
+    margin-top: -50px;
+    display: block !important;
+}
+ul li ul li :hover ul
+{
+    display: block !important;
+}
+</style>
+<body>
+    <header>
+           <nav>
+                <div>
+                    <ul>
+                            <li><a href="#home">Home</a></li>
+
+                            <li><a href="#news">News</a></li>
+
+                            <li><a href="service.html">services</a>
+                                <li><a href="#">samsung</a></li>
+                                <Li><a href="#">infinix</a></Li>
+                                <li><a href="#">oppo</a></li>
+
+                            </li>
+                           
+
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#about">About</a></li>             
+                     </ul> 
+               </div> 
+            </nav>
+    </header> 
+
+    
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    } 
+    header {
+        height: 100%;
+        width: 100%;
+        float: left;
+        background: rgb(67, 182, 32);
+        padding: 0 20px;
+        color: aliceblue;
+    }
+    .brand-logo{
+        max-width: 75px;
+        float: left;
+        padding: 14px 0px;
+    }
+    .brand-logo img {
+        max-width: 100px;
+    }
+    
+    .navigation{
+        margin: 0px;
+        float: right;
+    }
+    .navigation li {
+        list-style: none;
+        float: left;
+    }
+     .navigation li a {
+        color: aliceblue;
+        padding: 28px 15px;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .navigation li a i {
+
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 7px;
+    }
+    
+    
+</style>
+<body>
+    <header>
+        <div class="brand-logo">
+            <a href="a"><img src="https://www.markuptag.com/images/white-logo-icon.png" alt="brand-logo"></a>
+        </div>
+        <nav>
+             <ul class="navigation">
+                <li> <a href="a"><i class="fas fa-house-damage"></i>home</a></li>
+                <li> <a href="a"><i class="far fa-image"></i>gallery</a></li>
+                <li> <a href="a"><i class="fab fa-blogger-b"></i>blog</a></li>
+                <li> <a href="a"><i class="fas fa-question"></i>support</a></li>
+                <li> <a href="a"><i class="fas fa-phone-alt"></i>contact us</a></li>
+                <label for="toggle-btn" class="hide-menu-btn"> <i class="fas fa-times"></i></label>
+             </ul>
+        </nav>
+       </header>
+</body>
+</html>

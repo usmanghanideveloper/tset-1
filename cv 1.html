@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responcive Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppin,sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px; 
+    min-height:1000px;
+    margin: 50px;
+    background: #fff;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(176,25,25,0.1);
+}
+
+.container .left{
+    position: relative;
+    background: #680708;
+    padding: 40px;
+}
+
+.profiletext{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.profiletext .imgbx{
+    position: relative;
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    overflow: hidden;    
+}
+
+.profiletext .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 135%;
+    object-fit: cover;
+}
+
+.profiletext h2{
+    color: #fff;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.profiletext h2 span{
+    font-size: 0.8rem;
+    font-style: 300;
+}
+
+.contactinfo{
+    padding-top: 40px;
+}
+
+.title{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.contactinfo ul{
+    position: relative;
+}
+
+.contactinfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.contactinfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color:  rgb(241, 141, 141);;
+}
+
+.contactinfo ul li span{
+    color: #fff;
+    font-weight: 300;
+}
+
+.contactinfo.education li{
+   margin-bottom:15px ;
+}
+
+.contactinfo.education h5{
+    color: rgb(241, 141, 141);
+    font-weight: 500;
+}
+
+.contactinfo.education h4{
+    color: rgb(252, 248, 248);
+    font-weight: 300;
+}   
+
+.contactinfo.education h4:nth-child(2){
+    color: #fff;
+    font-weight: 600;
+}
+
+.contactinfo.langauge .perrcent{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #f18384;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactinfo.langauge .perrcent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #620305;
+}
+
+.container .right{
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0;
+}
+
+.title2{
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 40px;
+    font-family: Arial;
+}
+
+p{
+    color: #333;
+    cursor: pointer;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #848c90;
+    font-weight: 600;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: rgb(121, 2, 2);
+    font-size: 16px;
+    }
+
+    .skills .box{
+        position: relative;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        justify-content: center;
+        align-items: center;
+    }
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #848c99;
+    
+    font-weight: 500; 
+}
+
+.skills .box .percent{
+position: relative;
+width: 90%;
+height: 10px;
+background: #f0f0f0;
+}
+
+.skills .box .percent div{
+     position: absolute;
+     top: 0;
+     left: 00;
+     height: 100%;
+     background: rgb(148, 8, 8);
+}
+
+.interset ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.interset ul li{
+    list-style: none;
+    color: #333;
+    font-weight:
+</style>
+<body>
+
+    <div class="container">
+        <div class="left">
+            <div class="profiletext">
+                <div class="imgbx">
+                    <img src="assets/download (2).jpg">
+                </div>
+                <h2>asif ali zardari <br> <span>Science</span></h2>
+            </div>
+            <div class="contactinfo">
+            <h3 class="title"> Contact info</h3>
+            <ul>
+                <li>
+                    <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                    <span class="text">+923554981592</span>
+                </li>
+
+                <li>
+                    <span class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <span class="text">salmansoomro9088@gmail.com</span>
+                </li>
+
+                <li>
+                    <span class="icon"><i class="fa fa-youtube" aria-hidden="true"></i></span>
+                    <span class="text">www.youtube.com</span>
+                </li>
+
+                <li>
+                    <span class="icon"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+                    <span class="text">www.facebook.com</span>
+                </li>
+
+                <li>
+                    <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    <span class="text"> dha phase 6 Karachi</span>
+                </li>
+            </ul>
+        </div>
+        <div class="contactinfo education">
+            <h3 class="title"> EDUCATION</h3>
+            <ul>
+                <li>
+                    <h5>2014 - 2016</h5>
+                    <h4>Matric in Scince</h4>
+                    <h4>prince proggrasive School</h4>
+                </li>
+                <li>
+                    <h5>2017 - 2019</h5>
+                    <h4>Intermediate in Maths</h4>
+                    <h4>Islamia Collge</h4>
+                </li>
+                <li>
+                    <h5>2020 </h5>
+                    <h4>Undergraduate in Computer Science</h4>
+                    <h4>Karachi university</h4>
+                </li>
+            </ul>
+        </div>
+        <div class="contactinfo langauge">
+            <h3 class="title">LANGUAGES</h3>
+            <ul>
+                <li>
+                    <span class="text">ENGLISH</span>
+                    <span class="perrcent"></span>
+                    <div style="width:80%"></div>
+                </li>
+                <li>
+                    <span class="text">URDU</span>
+                    <span class="perrcent"></span>
+                    <div style="width:80%"></div>
+                </li>
+                </ul>
+                </div>
+        </div>
+        <div class="right-side">
+            <div class="about">
+                <h2 class="title2">Profile</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.  Cupiditate alias perferendis eveniet illo accusamus <br> similique tempore quo placeat voluptas. Harum?Temporibus commodi aut dolores facere minus dicta <br> soluta tempore maxime, eaque doloribus.Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, <br> officiis consequatur neque cupiditate non mollitia corrupti nobis atque deleniti dolor explicabo rem soluta? <br> Laborum quis debitis quam sapiente reprehenderit, hic autem excepturi id esse laudantium eveniet! <br> Earum numquam qui eius, molestias repellendus iusto! Reiciendis cupiditate laudantium ab <br> assumenda? Eum, adipisci.</p>
+            </div>
+        
+    <div class="about">
+        <h2 class="title2">Experience</h2>
+        <div class="box">
+            <div class="year_company">
+                <h5>2019 - present</h5>
+                <h5>Shahid Jewellery</h5>
+            </div>
+            <div class="text">
+            <h4>junior Accounting </h4>
+            <p>Lorem ipsum dolor sit amet . Lorem ipsum dolor sit,  <br>Lorem ipsum dolor, sit amet consectetur adipisicing  <br>elit. Labore earum voluptas consequatur, reprehenderit veniam dolore?.</p>
+        </div>
+        </div>
+        <div class="box">
+            <div class="year_company">
+                <h5>2019 - present</h5>
+            </div>
+            <div class="text">
+            <h4>Data analyist</h4>
+            <p>Lorem ipsum dolor sit amet <br> Lorem ipsum dolor sit, Lorem ipsum dolor, <br> sit amet consectetur adipisicing elit. Labore earum voluptas consequatur, reprehenderit veniam dolore?.</p>
+        </div>
+    </div>
+</div>
+<div class="skills">
+    <h2 class="title2">professional skills</h2>
+    <div class="box">
+        <h4>html</h4>
+        <div class="percent">
+        <div style="width: 95%;"></div>
+    </div>
+</div>
+    <br>
+    <div class="box">
+        <h4>CSS</h4>
+        <div class="percent">
+        <div style="width: 85%;"></div>
+    </div>
+</div>
+    <br>
+    <div class="box">
+        <h4>JAVASCRIPT</h4>
+        <div class="percent">
+        <div style="width: 35%;"></div>
+    </div>
+</div>
+    <br>
+    <div class="box">
+        <h4>PYTHON</h4>
+        <div class="percent">
+        <div style="width: 15%;"></div>
+    </div>
+</div>
+<div class="about interset">
+    <h2 class="title2">Interest</h2>
+    <ul>
+        <li><i class="fa fa-bar-chart"></i>Crypto Trading</li>
+        <li><i class="fa fa-laptop" aria-hidden="true"></i>Web Devloping</li>
+        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Gameing</li>
+        <li><i class="fa fa-briefcase"></i>Business</li>
+    </ul>
+</div>
+</div>
+</div>
+</body>
+</html>
